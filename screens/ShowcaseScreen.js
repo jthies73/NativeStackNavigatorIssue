@@ -1,9 +1,8 @@
-import {Button, Text, TouchableOpacity, useWindowDimensions, View} from "react-native";
+import {Button, Text, useWindowDimensions, View} from "react-native";
 import {ScrollView} from "react-native-gesture-handler";
 
 const ShowcaseScreen = ({navigation}) => {
     let width = useWindowDimensions().width;
-    let height = useWindowDimensions().height;
 
     return (
         <View style={{flex: 1}}>
@@ -76,7 +75,7 @@ const ShowcaseScreen = ({navigation}) => {
                 <View style={{flex: 1, width: width, backgroundColor: "purple", justifyContent: "flex-end"}}>
 
                     <View style={{flex: 1, justifyContent: "center", alignItems: "center"}}>
-                        <Text style={{fontSize: 100}}>1</Text>
+                        <Text style={{fontSize: 100}}>2</Text>
                         <Text style={{fontSize: 50, textAlign: "center"}}>&lt;-------------------&gt;</Text>
                         <Text style={{fontSize: 20, textAlign: "center", paddingHorizontal: 20}}>you should be able to
                             apply
@@ -122,7 +121,7 @@ const ShowcaseScreen = ({navigation}) => {
                 <View style={{flex: 1, width: width, backgroundColor: "green", justifyContent: "space-between"}}>
 
                     <View style={{flex: 1, justifyContent: "center", alignItems: "center"}}>
-                        <Text style={{fontSize: 100}}>1</Text>
+                        <Text style={{fontSize: 100}}>3</Text>
                         <Text style={{fontSize: 50, textAlign: "center"}}>&lt;-------------------&gt;</Text>
                         <Text style={{fontSize: 20, textAlign: "center", paddingHorizontal: 20}}>you should be able to
                             apply
@@ -168,8 +167,7 @@ const ShowcaseScreen = ({navigation}) => {
 
             </ScrollView>
         </View>
-    )
-        ;
+    );
 }
 
 export default ShowcaseScreen
