@@ -1,3 +1,4 @@
+import React from 'react';
 import {Button, Text, useWindowDimensions, View} from "react-native";
 import {ScrollView} from "react-native-gesture-handler";
 
